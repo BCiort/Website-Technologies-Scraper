@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "rules": {
+      "headers": {
+        "X-ShopId": ".*",
+        "X-Shopify-Stage": ".*"
+      },
+      "html": [
+        "cdn\\.shopify\\.com",
+        "var Shopify ="
+      ]
+    }
+  },
+  {
+    "name": "WordPress",
+    "category": "CMS",
+    "rules": {
+      "headers": {
+        "Link": ".*wp-json.*"
+      },
+      "html": [
+        "wp-content/themes",
+        "<meta name=\"generator\" content=\"WordPress"
+      ]
+    }
+  },
+  {
+    "name": "React",
+    "category": "Frontend Framework",
+    "rules": {
+      "html": [
+        "data-reactroot",
+        "<div id=\"root\">"
+      ]
+    }
+  }
+]

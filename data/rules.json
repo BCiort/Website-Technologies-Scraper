@@ -18,11 +18,13 @@
     "category": "CMS",
     "rules": {
       "headers": {
-        "Link": ".*wp-json.*"
+        "Link": ".*api\\.w\\.org.*"
       },
       "html": [
-        "wp-content/themes",
-        "<meta name=\"generator\" content=\"WordPress"
+        "wp-includes/",
+        "wp-content/",
+        "s\\.w\\.org",
+        "wp-emoji-release"
       ]
     }
   },
@@ -32,7 +34,9 @@
     "rules": {
       "html": [
         "data-reactroot",
-        "<div id=\"root\">"
+        "id=\"__next\"",
+        "_next/static/",
+        "__NEXT_DATA__"
       ]
     }
   }
